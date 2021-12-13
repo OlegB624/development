@@ -14,5 +14,6 @@ class LoginFormController: UIViewController {
     @IBOutlet weak var login: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBAction func buttonLogin(_ sender: Any) {
-            }    
+            }
 }
+

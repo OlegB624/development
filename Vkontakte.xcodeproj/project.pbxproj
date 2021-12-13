@@ -16,9 +16,6 @@
 		1F8B25EE2731512100CFA122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8B25EC2731512100CFA122 /* Main.storyboard */; };
 		1F8B25F02731512300CFA122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F8B25EF2731512300CFA122 /* Assets.xcassets */; };
 		1F8B25F32731512300CFA122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8B25F12731512300CFA122 /* LaunchScreen.storyboard */; };
-		1F8B25FE2731512400CFA122 /* VkontakteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B25FD2731512400CFA122 /* VkontakteTests.swift */; };
-		1F8B26082731512400CFA122 /* VkontakteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B26072731512400CFA122 /* VkontakteUITests.swift */; };
-		1F8B260A2731512400CFA122 /* VkontakteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B26092731512400CFA122 /* VkontakteUITestsLaunchTests.swift */; };
 		1F8B2619273152D000CFA122 /* LoginFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B2618273152D000CFA122 /* LoginFormController.swift */; };
 		1FA9CC3C2746584200910F43 /* FriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA9CC3B2746584200910F43 /* FriendsCell.swift */; };
 		1FA9CC3E274659C000910F43 /* CustomHeaderFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA9CC3D274659C000910F43 /* CustomHeaderFriends.swift */; };
@@ -30,6 +27,7 @@
 		1FAF615027399A3800385844 /* GroupSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF614F27399A3800385844 /* GroupSearchController.swift */; };
 		1FAF615227399A5600385844 /* GroupSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF615127399A5600385844 /* GroupSearchCell.swift */; };
 		1FC5EB05273834CE0067F713 /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC5EB04273834CE0067F713 /* Friends.swift */; };
+		1FE5F06727679B6E0083169F /* account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE5F06627679B6E0083169F /* account.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,10 +60,7 @@
 		1F8B25F22731512300CFA122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F8B25F42731512300CFA122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F8B25F92731512400CFA122 /* VkontakteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VkontakteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F8B25FD2731512400CFA122 /* VkontakteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkontakteTests.swift; sourceTree = "<group>"; };
 		1F8B26032731512400CFA122 /* VkontakteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VkontakteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F8B26072731512400CFA122 /* VkontakteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkontakteUITests.swift; sourceTree = "<group>"; };
-		1F8B26092731512400CFA122 /* VkontakteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkontakteUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1F8B2618273152D000CFA122 /* LoginFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormController.swift; sourceTree = "<group>"; };
 		1FA9CC3B2746584200910F43 /* FriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCell.swift; sourceTree = "<group>"; };
 		1FA9CC3D274659C000910F43 /* CustomHeaderFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderFriends.swift; sourceTree = "<group>"; };
@@ -77,6 +72,7 @@
 		1FAF614F27399A3800385844 /* GroupSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupSearchController.swift; sourceTree = "<group>"; };
 		1FAF615127399A5600385844 /* GroupSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupSearchCell.swift; sourceTree = "<group>"; };
 		1FC5EB04273834CE0067F713 /* Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
+		1FE5F06627679B6E0083169F /* account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = account.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				1F8B25E52731512100CFA122 /* Vkontakte */,
-				1F8B25FC2731512400CFA122 /* VkontakteTests */,
-				1F8B26062731512400CFA122 /* VkontakteUITests */,
 				1F8B25E42731512100CFA122 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -138,6 +132,7 @@
 		1F8B25E52731512100CFA122 /* Vkontakte */ = {
 			isa = PBXGroup;
 			children = (
+				1FE5F06527679B440083169F /* client-server */,
 				1F1F8A752743808400707CE3 /* MyProfile */,
 				1FAF614D27399A0300385844 /* GroupSearch */,
 				1FAF6148273995D800385844 /* MyGroup */,
@@ -152,23 +147,6 @@
 				1F8B25F42731512300CFA122 /* Info.plist */,
 			);
 			path = Vkontakte;
-			sourceTree = "<group>";
-		};
-		1F8B25FC2731512400CFA122 /* VkontakteTests */ = {
-			isa = PBXGroup;
-			children = (
-				1F8B25FD2731512400CFA122 /* VkontakteTests.swift */,
-			);
-			path = VkontakteTests;
-			sourceTree = "<group>";
-		};
-		1F8B26062731512400CFA122 /* VkontakteUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1F8B26072731512400CFA122 /* VkontakteUITests.swift */,
-				1F8B26092731512400CFA122 /* VkontakteUITestsLaunchTests.swift */,
-			);
-			path = VkontakteUITests;
 			sourceTree = "<group>";
 		};
 		1FAF61432739924500385844 /* Photo */ = {
@@ -207,6 +185,14 @@
 				1FA9CC3F274659DB00910F43 /* CustomHeaderFriends.xib */,
 			);
 			path = Friends;
+			sourceTree = "<group>";
+		};
+		1FE5F06527679B440083169F /* client-server */ = {
+			isa = PBXGroup;
+			children = (
+				1FE5F06627679B6E0083169F /* account.swift */,
+			);
+			path = "client-server";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +332,7 @@
 				1FC5EB05273834CE0067F713 /* Friends.swift in Sources */,
 				1FA9CC3E274659C000910F43 /* CustomHeaderFriends.swift in Sources */,
 				1F1F8A7D2743811500707CE3 /* MyProfilePhotoCell.swift in Sources */,
+				1FE5F06727679B6E0083169F /* account.swift in Sources */,
 				1FAF615027399A3800385844 /* GroupSearchController.swift in Sources */,
 				1F1F8A79274380D900707CE3 /* MyProfileCell.swift in Sources */,
 				1FA9CC3C2746584200910F43 /* FriendsCell.swift in Sources */,
@@ -364,7 +351,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F8B25FE2731512400CFA122 /* VkontakteTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,8 +358,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F8B260A2731512400CFA122 /* VkontakteUITestsLaunchTests.swift in Sources */,
-				1F8B26082731512400CFA122 /* VkontakteUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
