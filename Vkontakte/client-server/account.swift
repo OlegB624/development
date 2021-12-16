@@ -7,9 +7,11 @@
 
 import Foundation
 
-class Session {
-    static let sessionApp = Session()
-    private init(){}
-    var token: String = ""
-    var userId: Int = 1
+final class Session {
+    private init() {}
+
+    static let shared = Session()
+
+    var token = ""
+    var userId = ""
 }
