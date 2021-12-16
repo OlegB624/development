@@ -18,25 +18,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HGY-eg-IwD">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HGY-eg-IwD">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Se5-AY-JK6">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
-                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <wkWebViewConfiguration key="configuration">
-                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                            <wkPreferences key="preferences"/>
-                                        </wkWebViewConfiguration>
-                                    </wkWebView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вконтакте" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ign-g9-XLF">
+                                        <rect key="frame" x="94.5" y="100" width="225.5" height="56.5"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="45"/>
+                                        <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bs-x2-Soc">
+                                        <rect key="frame" x="165" y="196.5" width="84" height="38"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gc3-0x-Pjx" userLabel="Button">
+                                        <rect key="frame" x="166.5" y="440.5" width="81" height="47"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Войти" buttonSize="large"/>
+                                        <connections>
+                                            <action selector="buttonLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bkd-c7-PPd"/>
+                                            <segue destination="pme-Hm-i16" kind="show" id="Lmm-Eg-ZE1"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="meI-JA-Iv0">
+                                        <rect key="frame" x="106.5" y="244.5" width="201" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xo5-gb-N8k">
+                                        <rect key="frame" x="106.5" y="366.5" width="201" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDV-m5-GKZ">
+                                        <rect key="frame" x="155" y="318.5" width="104" height="38"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
-                                    <constraint firstItem="Se5-AY-JK6" firstAttribute="top" secondItem="Vde-nh-Y42" secondAttribute="top" id="GbM-El-Ek4"/>
-                                    <constraint firstItem="Se5-AY-JK6" firstAttribute="trailing" secondItem="Vde-nh-Y42" secondAttribute="trailing" id="K1u-eh-fnB"/>
-                                    <constraint firstItem="Se5-AY-JK6" firstAttribute="bottom" secondItem="Vde-nh-Y42" secondAttribute="bottom" id="NUj-ND-JYV"/>
-                                    <constraint firstItem="Se5-AY-JK6" firstAttribute="leading" secondItem="Vde-nh-Y42" secondAttribute="leading" id="vTN-rU-jXQ"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="meI-JA-Iv0" secondAttribute="trailing" constant="100" id="4Rw-zs-jtN"/>
+                                    <constraint firstItem="mDV-m5-GKZ" firstAttribute="top" secondItem="meI-JA-Iv0" secondAttribute="bottom" constant="40" id="5Pg-yb-Qri"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="ign-g9-XLF" secondAttribute="trailing" constant="186" id="8NA-Oe-h39"/>
+                                    <constraint firstItem="gc3-0x-Pjx" firstAttribute="top" secondItem="Xo5-gb-N8k" secondAttribute="bottom" constant="40" id="8Zz-3i-ZCT"/>
+                                    <constraint firstAttribute="trailing" secondItem="gc3-0x-Pjx" secondAttribute="trailing" constant="160" id="9gh-JL-TSr"/>
+                                    <constraint firstItem="ign-g9-XLF" firstAttribute="centerX" secondItem="HGY-eg-IwD" secondAttribute="centerX" id="IWn-cf-goy"/>
+                                    <constraint firstItem="meI-JA-Iv0" firstAttribute="centerX" secondItem="HGY-eg-IwD" secondAttribute="centerX" id="K6u-SF-07O"/>
+                                    <constraint firstItem="Xo5-gb-N8k" firstAttribute="centerX" secondItem="HGY-eg-IwD" secondAttribute="centerX" id="R1s-ZH-ijW"/>
+                                    <constraint firstItem="Xo5-gb-N8k" firstAttribute="top" secondItem="mDV-m5-GKZ" secondAttribute="bottom" constant="10" id="SLq-D6-QS8"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="mDV-m5-GKZ" secondAttribute="trailing" constant="186" id="Zzh-KF-L7S"/>
+                                    <constraint firstItem="ign-g9-XLF" firstAttribute="top" secondItem="Vde-nh-Y42" secondAttribute="top" constant="100" id="aCn-gb-9J3"/>
+                                    <constraint firstAttribute="bottom" secondItem="gc3-0x-Pjx" secondAttribute="bottom" constant="100" id="dML-tM-DmE"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Xo5-gb-N8k" secondAttribute="trailing" constant="100" id="h5x-9h-TwQ"/>
+                                    <constraint firstItem="8bs-x2-Soc" firstAttribute="top" secondItem="ign-g9-XLF" secondAttribute="bottom" constant="40" id="heD-ek-fYA"/>
+                                    <constraint firstItem="gc3-0x-Pjx" firstAttribute="centerX" secondItem="HGY-eg-IwD" secondAttribute="centerX" id="lEP-cr-l8h"/>
+                                    <constraint firstItem="mDV-m5-GKZ" firstAttribute="centerX" secondItem="HGY-eg-IwD" secondAttribute="centerX" id="o0M-RJ-rb7"/>
+                                    <constraint firstItem="meI-JA-Iv0" firstAttribute="top" secondItem="8bs-x2-Soc" secondAttribute="bottom" constant="10" id="opw-ey-Mba"/>
+                                    <constraint firstItem="8bs-x2-Soc" firstAttribute="centerX" secondItem="HGY-eg-IwD" secondAttribute="centerX" id="pnz-UX-52o"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="8bs-x2-Soc" secondAttribute="trailing" constant="186" id="uto-jc-38M"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="5cw-ci-LLg"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Vde-nh-Y42"/>
@@ -44,16 +89,22 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HGY-eg-IwD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1cg-qN-gho"/>
+                            <constraint firstItem="HGY-eg-IwD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5Oz-uR-wMQ"/>
+                            <constraint firstItem="HGY-eg-IwD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Q58-GI-nqw"/>
+                            <constraint firstItem="HGY-eg-IwD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aye-eu-gmt"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ВХОД" id="Eqx-MM-uUp"/>
                     <connections>
-                        <outlet property="webView" destination="Se5-AY-JK6" id="G4j-fH-dBS"/>
-                        <segue destination="pme-Hm-i16" kind="show" identifier="showFriendsSegue" id="KV0-Nf-r03"/>
+                        <outlet property="login" destination="meI-JA-Iv0" id="S6r-qX-wj9"/>
+                        <outlet property="password" destination="Xo5-gb-N8k" id="I96-eu-iRh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4566.666666666667" y="807.58928571428567"/>
+            <point key="canvasLocation" x="4568" y="808"/>
         </scene>
         <!--Мои друзья-->
         <scene sceneID="jF0-Ff-b3f">
@@ -339,14 +390,14 @@
                         <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupSearch" id="ix3-Za-vka" customClass="GroupSearchCell" customModule="Vkontakte" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="41.5"/>
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="41"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ix3-Za-vka" id="Ypp-Ky-ruW">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="41.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJj-LJ-e80">
-                                            <rect key="frame" x="30" y="10" width="42" height="21.5"/>
+                                            <rect key="frame" x="30" y="10" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -455,14 +506,14 @@
                         <color key="tintColor" systemColor="labelColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyGroupe" id="0k7-Vm-7tS" customClass="GroupeCell" customModule="Vkontakte" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0k7-Vm-7tS" id="hgM-SS-fcN">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0W5-eK-Xmr">
-                                            <rect key="frame" x="40" y="11" width="42" height="21.5"/>
+                                            <rect key="frame" x="40" y="11" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -552,6 +603,9 @@
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
