@@ -11,7 +11,7 @@
 		1F1F8A79274380D900707CE3 /* MyProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1F8A78274380D900707CE3 /* MyProfileCell.swift */; };
 		1F1F8A7B274380FD00707CE3 /* MyProfilePhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1F8A7A274380FD00707CE3 /* MyProfilePhotoController.swift */; };
 		1F1F8A7D2743811500707CE3 /* MyProfilePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1F8A7C2743811500707CE3 /* MyProfilePhotoCell.swift */; };
-		1F2FAF68276BAD680077F2CB /* FriendsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2FAF67276BAD680077F2CB /* FriendsAPI.swift */; };
+		1F37CB89278E03240026FC63 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F37CB88278E03240026FC63 /* FriendsViewController.swift */; };
 		1F8B25E72731512100CFA122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B25E62731512100CFA122 /* AppDelegate.swift */; };
 		1F8B25E92731512100CFA122 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B25E82731512100CFA122 /* SceneDelegate.swift */; };
 		1F8B25EE2731512100CFA122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8B25EC2731512100CFA122 /* Main.storyboard */; };
@@ -19,6 +19,17 @@
 		1F8B25F32731512300CFA122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8B25F12731512300CFA122 /* LaunchScreen.storyboard */; };
 		1F8B2619273152D000CFA122 /* LoginFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B2618273152D000CFA122 /* LoginFormController.swift */; };
 		1F920C74276BB2E600FAE9AA /* FriendsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F920C73276BB2E600FAE9AA /* FriendsModel.swift */; };
+		1F9654CF278E10880047E3D4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1F9654CE278E10880047E3D4 /* Alamofire */; };
+		1F9654D2278E10E70047E3D4 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 1F9654D1278E10E70047E3D4 /* SDWebImage */; };
+		1F9654D5278E13980047E3D4 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 1F9654D4278E13980047E3D4 /* SwiftyJSON */; };
+		1F9654D82792B5510047E3D4 /* Data+PrettyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9654D72792B5510047E3D4 /* Data+PrettyJSON.swift */; };
+		1F9654E22792C1CE0047E3D4 /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9654E12792C1CE0047E3D4 /* GroupModel.swift */; };
+		1F9654E62793FFC90047E3D4 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9654E52793FFC90047E3D4 /* PhotoModel.swift */; };
+		1F9654E8279405F90047E3D4 /* PhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9654E7279405F90047E3D4 /* PhotoTableViewController.swift */; };
+		1F9654ED2794097E0047E3D4 /* FriendsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9654EC2794097E0047E3D4 /* FriendsAPI.swift */; };
+		1F9654EF27940AE90047E3D4 /* GroupesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9654EE27940AE90047E3D4 /* GroupesAPI.swift */; };
+		1F9654F127940AF90047E3D4 /* PhotoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9654F027940AF90047E3D4 /* PhotoAPI.swift */; };
+		1F9654F5279414EB0047E3D4 /* GroupesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9654F4279414EB0047E3D4 /* GroupesTableViewController.swift */; };
 		1FA9CC3C2746584200910F43 /* FriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA9CC3B2746584200910F43 /* FriendsCell.swift */; };
 		1FA9CC3E274659C000910F43 /* CustomHeaderFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA9CC3D274659C000910F43 /* CustomHeaderFriends.swift */; };
 		1FA9CC40274659DB00910F43 /* CustomHeaderFriends.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FA9CC3F274659DB00910F43 /* CustomHeaderFriends.xib */; };
@@ -54,7 +65,7 @@
 		1F1F8A78274380D900707CE3 /* MyProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileCell.swift; sourceTree = "<group>"; };
 		1F1F8A7A274380FD00707CE3 /* MyProfilePhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfilePhotoController.swift; sourceTree = "<group>"; };
 		1F1F8A7C2743811500707CE3 /* MyProfilePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfilePhotoCell.swift; sourceTree = "<group>"; };
-		1F2FAF67276BAD680077F2CB /* FriendsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsAPI.swift; sourceTree = "<group>"; };
+		1F37CB88278E03240026FC63 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		1F8B25E32731512100CFA122 /* Vkontakte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vkontakte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8B25E62731512100CFA122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F8B25E82731512100CFA122 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +77,14 @@
 		1F8B26032731512400CFA122 /* VkontakteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VkontakteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8B2618273152D000CFA122 /* LoginFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormController.swift; sourceTree = "<group>"; };
 		1F920C73276BB2E600FAE9AA /* FriendsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsModel.swift; sourceTree = "<group>"; };
+		1F9654D72792B5510047E3D4 /* Data+PrettyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+PrettyJSON.swift"; sourceTree = "<group>"; };
+		1F9654E12792C1CE0047E3D4 /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
+		1F9654E52793FFC90047E3D4 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		1F9654E7279405F90047E3D4 /* PhotoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewController.swift; sourceTree = "<group>"; };
+		1F9654EC2794097E0047E3D4 /* FriendsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsAPI.swift; sourceTree = "<group>"; };
+		1F9654EE27940AE90047E3D4 /* GroupesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupesAPI.swift; sourceTree = "<group>"; };
+		1F9654F027940AF90047E3D4 /* PhotoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAPI.swift; sourceTree = "<group>"; };
+		1F9654F4279414EB0047E3D4 /* GroupesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupesTableViewController.swift; sourceTree = "<group>"; };
 		1FA9CC3B2746584200910F43 /* FriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCell.swift; sourceTree = "<group>"; };
 		1FA9CC3D274659C000910F43 /* CustomHeaderFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderFriends.swift; sourceTree = "<group>"; };
 		1FA9CC3F274659DB00910F43 /* CustomHeaderFriends.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeaderFriends.xib; sourceTree = "<group>"; };
@@ -84,6 +103,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F9654D5278E13980047E3D4 /* SwiftyJSON in Frameworks */,
+				1F9654D2278E10E70047E3D4 /* SDWebImage in Frameworks */,
+				1F9654CF278E10880047E3D4 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +140,7 @@
 		1F8B25DA2731512100CFA122 = {
 			isa = PBXGroup;
 			children = (
+				1FE5F06527679B440083169F /* client-server */,
 				1F8B25E52731512100CFA122 /* Vkontakte */,
 				1F8B25E42731512100CFA122 /* Products */,
 			);
@@ -136,7 +159,6 @@
 		1F8B25E52731512100CFA122 /* Vkontakte */ = {
 			isa = PBXGroup;
 			children = (
-				1FE5F06527679B440083169F /* client-server */,
 				1F1F8A752743808400707CE3 /* MyProfile */,
 				1FAF614D27399A0300385844 /* GroupSearch */,
 				1FAF6148273995D800385844 /* MyGroup */,
@@ -145,12 +167,101 @@
 				1F8B25E62731512100CFA122 /* AppDelegate.swift */,
 				1F8B25E82731512100CFA122 /* SceneDelegate.swift */,
 				1F8B25EC2731512100CFA122 /* Main.storyboard */,
-				1F8B2618273152D000CFA122 /* LoginFormController.swift */,
 				1F8B25EF2731512300CFA122 /* Assets.xcassets */,
 				1F8B25F12731512300CFA122 /* LaunchScreen.storyboard */,
 				1F8B25F42731512300CFA122 /* Info.plist */,
 			);
 			path = Vkontakte;
+			sourceTree = "<group>";
+		};
+		1F9654D62792B51B0047E3D4 /* vkservise */ = {
+			isa = PBXGroup;
+			children = (
+				1F9654EB279409650047E3D4 /* services */,
+				1F9654D92792B71F0047E3D4 /* Modules */,
+				1F9654D72792B5510047E3D4 /* Data+PrettyJSON.swift */,
+			);
+			path = vkservise;
+			sourceTree = "<group>";
+		};
+		1F9654D92792B71F0047E3D4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1F9654E32793FF6A0047E3D4 /* Photo */,
+				1F9654DF2792C19E0047E3D4 /* Groupes */,
+				1F9654DB2792B7EA0047E3D4 /* Friends */,
+				1F9654DA2792B7CA0047E3D4 /* Authorization */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1F9654DA2792B7CA0047E3D4 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				1F8B2618273152D000CFA122 /* LoginFormController.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		1F9654DB2792B7EA0047E3D4 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				1F9654DE2792C0210047E3D4 /* Models */,
+				1F37CB88278E03240026FC63 /* FriendsViewController.swift */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		1F9654DE2792C0210047E3D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F920C73276BB2E600FAE9AA /* FriendsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1F9654DF2792C19E0047E3D4 /* Groupes */ = {
+			isa = PBXGroup;
+			children = (
+				1F9654F4279414EB0047E3D4 /* GroupesTableViewController.swift */,
+				1F9654E02792C1B60047E3D4 /* Models */,
+			);
+			path = Groupes;
+			sourceTree = "<group>";
+		};
+		1F9654E02792C1B60047E3D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F9654E12792C1CE0047E3D4 /* GroupModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1F9654E32793FF6A0047E3D4 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				1F9654E42793FFA30047E3D4 /* Models */,
+				1F9654E7279405F90047E3D4 /* PhotoTableViewController.swift */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		1F9654E42793FFA30047E3D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F9654E52793FFC90047E3D4 /* PhotoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1F9654EB279409650047E3D4 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				1F9654EC2794097E0047E3D4 /* FriendsAPI.swift */,
+				1F9654EE27940AE90047E3D4 /* GroupesAPI.swift */,
+				1F9654F027940AF90047E3D4 /* PhotoAPI.swift */,
+			);
+			path = services;
 			sourceTree = "<group>";
 		};
 		1FAF61432739924500385844 /* Photo */ = {
@@ -194,9 +305,8 @@
 		1FE5F06527679B440083169F /* client-server */ = {
 			isa = PBXGroup;
 			children = (
+				1F9654D62792B51B0047E3D4 /* vkservise */,
 				1FE5F06627679B6E0083169F /* account.swift */,
-				1F2FAF67276BAD680077F2CB /* FriendsAPI.swift */,
-				1F920C73276BB2E600FAE9AA /* FriendsModel.swift */,
 			);
 			path = "client-server";
 			sourceTree = "<group>";
@@ -217,6 +327,11 @@
 			dependencies = (
 			);
 			name = Vkontakte;
+			packageProductDependencies = (
+				1F9654CE278E10880047E3D4 /* Alamofire */,
+				1F9654D1278E10E70047E3D4 /* SDWebImage */,
+				1F9654D4278E13980047E3D4 /* SwiftyJSON */,
+			);
 			productName = Vkontakte;
 			productReference = 1F8B25E32731512100CFA122 /* Vkontakte.app */;
 			productType = "com.apple.product-type.application";
@@ -289,6 +404,11 @@
 				Base,
 			);
 			mainGroup = 1F8B25DA2731512100CFA122;
+			packageReferences = (
+				1F9654CD278E10880047E3D4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1F9654D0278E10E70047E3D4 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				1F9654D3278E13980047E3D4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 1F8B25E42731512100CFA122 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -333,22 +453,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F9654F5279414EB0047E3D4 /* GroupesTableViewController.swift in Sources */,
 				1FAF61452739928E00385844 /* PhotoController.swift in Sources */,
 				1FAF6147273992A700385844 /* PhotoViewCell.swift in Sources */,
 				1FC5EB05273834CE0067F713 /* Friends.swift in Sources */,
 				1FA9CC3E274659C000910F43 /* CustomHeaderFriends.swift in Sources */,
-				1F2FAF68276BAD680077F2CB /* FriendsAPI.swift in Sources */,
 				1F1F8A7D2743811500707CE3 /* MyProfilePhotoCell.swift in Sources */,
 				1FE5F06727679B6E0083169F /* account.swift in Sources */,
+				1F9654EF27940AE90047E3D4 /* GroupesAPI.swift in Sources */,
+				1F9654E62793FFC90047E3D4 /* PhotoModel.swift in Sources */,
 				1FAF615027399A3800385844 /* GroupSearchController.swift in Sources */,
 				1F1F8A79274380D900707CE3 /* MyProfileCell.swift in Sources */,
+				1F9654E8279405F90047E3D4 /* PhotoTableViewController.swift in Sources */,
 				1FA9CC3C2746584200910F43 /* FriendsCell.swift in Sources */,
+				1F9654ED2794097E0047E3D4 /* FriendsAPI.swift in Sources */,
 				1F8B2619273152D000CFA122 /* LoginFormController.swift in Sources */,
+				1F9654F127940AF90047E3D4 /* PhotoAPI.swift in Sources */,
+				1F9654E22792C1CE0047E3D4 /* GroupModel.swift in Sources */,
 				1F8B25E72731512100CFA122 /* AppDelegate.swift in Sources */,
 				1FAF614C2739963E00385844 /* GroupeCell.swift in Sources */,
 				1F920C74276BB2E600FAE9AA /* FriendsModel.swift in Sources */,
 				1F1F8A77274380BD00707CE3 /* MyProfileController.swift in Sources */,
 				1F8B25E92731512100CFA122 /* SceneDelegate.swift in Sources */,
+				1F9654D82792B5510047E3D4 /* Data+PrettyJSON.swift in Sources */,
+				1F37CB89278E03240026FC63 /* FriendsViewController.swift in Sources */,
 				1FAF615227399A5600385844 /* GroupSearchCell.swift in Sources */,
 				1F1F8A7B274380FD00707CE3 /* MyProfilePhotoController.swift in Sources */,
 				1FAF614A2739961F00385844 /* GroupeController.swift in Sources */,
@@ -706,6 +834,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1F9654CD278E10880047E3D4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.5.0;
+			};
+		};
+		1F9654D0278E10E70047E3D4 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		1F9654D3278E13980047E3D4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F9654CE278E10880047E3D4 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F9654CD278E10880047E3D4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		1F9654D1278E10E70047E3D4 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F9654D0278E10E70047E3D4 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		1F9654D4278E13980047E3D4 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F9654D3278E13980047E3D4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1F8B25DB2731512100CFA122 /* Project object */;
 }

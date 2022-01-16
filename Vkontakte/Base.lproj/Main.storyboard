@@ -58,7 +58,7 @@
         <!--Мои друзья-->
         <scene sceneID="jF0-Ff-b3f">
             <objects>
-                <tableViewController id="b8p-F2-8hg" customClass="Friends" customModule="Vkontakte" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="b8p-F2-8hg" customClass="FriendsViewController" customModule="Vkontakte" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="aWX-qs-1is">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -81,20 +81,10 @@
                                                 <constraint firstAttribute="height" constant="80" id="Ton-nq-WnN"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FriendsName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0SI-jx-xOK">
-                                            <rect key="frame" x="130" y="15" width="264" height="65.5"/>
-                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="0SI-jx-xOK" firstAttribute="leading" secondItem="qxv-0Y-ycV" secondAttribute="trailing" constant="30" id="7Rn-d1-ZxD"/>
-                                        <constraint firstAttribute="bottom" secondItem="0SI-jx-xOK" secondAttribute="bottom" constant="15" id="FoK-hS-uJL"/>
                                         <constraint firstAttribute="bottom" secondItem="qxv-0Y-ycV" secondAttribute="bottom" constant="5" id="SCM-ck-PlG"/>
                                         <constraint firstItem="qxv-0Y-ycV" firstAttribute="leading" secondItem="qXl-Rx-GHd" secondAttribute="leading" constant="20" id="ZcL-91-66b"/>
-                                        <constraint firstItem="0SI-jx-xOK" firstAttribute="top" secondItem="qXl-Rx-GHd" secondAttribute="top" constant="15" id="nZY-Gg-zDX"/>
-                                        <constraint firstAttribute="trailing" secondItem="0SI-jx-xOK" secondAttribute="trailing" constant="20" id="ujW-jF-hO2"/>
                                         <constraint firstItem="qxv-0Y-ycV" firstAttribute="top" secondItem="qXl-Rx-GHd" secondAttribute="top" constant="10" id="ziH-4x-DEL"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -102,8 +92,7 @@
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="AvatarFriend" destination="qxv-0Y-ycV" id="a3d-au-2RM"/>
-                                    <outlet property="FriendsName" destination="0SI-jx-xOK" id="TWi-Al-wjY"/>
-                                    <segue destination="Xco-gW-rCA" kind="show" id="pOm-kI-EzF"/>
+                                    <segue destination="HPj-zc-bFW" kind="show" id="fru-tt-9gL"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -328,6 +317,35 @@
             </objects>
             <point key="canvasLocation" x="8909" y="133"/>
         </scene>
+        <!--Photo Table View Controller-->
+        <scene sceneID="3N3-Rg-93x">
+            <objects>
+                <tableViewController id="HPj-zc-bFW" customClass="PhotoTableViewController" customModule="Vkontakte" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="oVl-OE-UnS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="aIb-Js-ZCF">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aIb-Js-ZCF" id="Zur-wu-o14">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="HPj-zc-bFW" id="rqL-6L-Qb1"/>
+                            <outlet property="delegate" destination="HPj-zc-bFW" id="Pvm-UD-k95"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="n8j-L0-Y9X"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sHB-A3-9tg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9684" y="123"/>
+        </scene>
         <!--Поиск-->
         <scene sceneID="gHu-1w-8HJ">
             <objects>
@@ -339,14 +357,14 @@
                         <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupSearch" id="ix3-Za-vka" customClass="GroupSearchCell" customModule="Vkontakte" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="41.5"/>
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="41"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ix3-Za-vka" id="Ypp-Ky-ruW">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="41.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJj-LJ-e80">
-                                            <rect key="frame" x="30" y="10" width="42" height="21.5"/>
+                                            <rect key="frame" x="30" y="10" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -447,7 +465,7 @@
         <!--Мои сообщества-->
         <scene sceneID="YOs-W1-Jx5">
             <objects>
-                <tableViewController id="u5U-mK-0yK" customClass="GroupeController" customModule="Vkontakte" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="u5U-mK-0yK" customClass="GroupesTableViewController" customModule="Vkontakte" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="vq3-0R-Rn5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
