@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 final class friendsAPI {
-func getFriends(completion: @escaping([FriendsModel])->()) {
+func getFriends(completion: @escaping([FriendsModelDAO])->()) {
     let token = Session.shared.token
     let userId = Session.shared.userId
     let version = "5.81"
@@ -30,7 +30,7 @@ func getFriends(completion: @escaping([FriendsModel])->()) {
         guard let jsonData = response.data else { return }
         do {
             let itemsData = try JSON(jsonData)["response"]["items"].rawData()
-            let friends = try JSONDecoder().decode([FriendsModel].self, from: itemsData)
+            let friends = try JSONDecoder().decode([FriendsModelDAO].self, from: itemsData)
             completion(friends)
         } catch {
             print(error)

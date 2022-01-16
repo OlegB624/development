@@ -11,7 +11,7 @@ import SDWebImage
 
 class PhotoTableViewController: UITableViewController {
     private var photosAPI = photoAPI()
-    private var photoM: [PhotoModel] = []
+    private var photoM: [PhotoModelDAO] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "PhotoCell")
@@ -29,7 +29,7 @@ class PhotoTableViewController: UITableViewController {
     }
     override func tableView (_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell", for: indexPath)
-        let photo:PhotoModel = photoM[indexPath.row]
+        let photo:PhotoModelDAO = photoM[indexPath.row]
         cell.textLabel?.text = String(photo.id)
         if let url = URL(string: photo.size.first!.url){
             cell.imageView?.sd_setImage(with: url, completed: nil)

@@ -10,10 +10,10 @@
 
     final class FriendsViewController: UITableViewController {
         private var friendAPI = friendsAPI()
-        private var friends: [FriendsModel] = []
+        private var friends: [FriendsModelDAO] = []
         override func viewDidLoad() {
             super.viewDidLoad()
-            tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+            tableView.register(UITableViewCell.self, forCellReuseIdentifier: "FriendsCell")
             friendAPI.getFriends { [weak self] friends in
                 guard let self = self else { return }
                 
@@ -26,7 +26,7 @@
         }
         override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "FriendsCell", for: indexPath)
-            let friend: FriendsModel = friends[indexPath.row]
+            let friend: FriendsModelDAO = friends[indexPath.row]
             cell.textLabel?.text = "\(friend.firstName) \(friend.lastName)"
             if let url = URL(string: friend.photo50) {
                 cell.imageView?.sd_setImage(with: url, completed: nil)

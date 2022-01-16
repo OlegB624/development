@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 final class groupesAPI {
-    func getGroupes(completion: @escaping([GroupeModel])->()) {
+    func getGroupes(completion: @escaping([GroupeModelDAO])->()) {
     let token = Session.shared.token
     let userId = Session.shared.userId
     let version = "5.81"

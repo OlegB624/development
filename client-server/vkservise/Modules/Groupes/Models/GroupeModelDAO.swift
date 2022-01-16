@@ -6,14 +6,19 @@
 //
 
 import Foundation
+import RealmSwift
 
-struct GroupeModel: Codable {
-    let isMember, id: Int
-    let photo100: String
-    let isAdvertiser, isAdmin: Int
-    let photo50: String
-    let type, screenName, name: String
-    let isClosed: Int
+class GroupeModelDAO: Object, Codable {
+    @objc dynamic var  isMember = 0
+    @objc dynamic var  id = 0
+    @objc dynamic var  photo100 = ""
+    @objc dynamic var  isAdvertiser = 0
+    @objc dynamic var  isAdmin = 0
+    @objc dynamic var  photo50 = ""
+    @objc dynamic var  type = ""
+    @objc dynamic var  screenName = ""
+    @objc dynamic var  name = ""
+    @objc dynamic var  isClosed = 0
 
     enum CodingKeys: String, CodingKey {
         case isMember = "is_member"

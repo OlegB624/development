@@ -6,25 +6,19 @@
 //
 
 import Foundation
+import RealmSwift
 
-struct FriendsContainer: Codable {
-    let response: FriendsResponse
-}
-struct FriendsResponse: Codable {
-    let count: Int
-    let items: [FriendsModel]
-}
-
-struct FriendsModel: Codable {
-    let domain: String
-    let id: Int
-    let lastName: String
-    let photo50: String
-    let trackCode: String?
-    let firstName: String
+class FriendsModelDAO: Object,  Codable {
+    @objc dynamic var domain = ""
+    @objc dynamic var id = 0
+    @objc dynamic var lastName = ""
+    @objc dynamic var photo50 = ""
+    @objc dynamic var trackCode = ""
+    @objc dynamic var firstName = ""
 
     enum CodingKeys: String, CodingKey {
-        case domain, id
+        case domain
+        case id
         case lastName = "last_name"
         case photo50 = "photo_50"
         case trackCode = "track_code"

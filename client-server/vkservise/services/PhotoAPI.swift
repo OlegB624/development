@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 final class photoAPI {
-    func getPhoto(completion: @escaping([PhotoModel])->()) {
+    func getPhoto(completion: @escaping([PhotoModelDAO])->()) {
 
     let token = Session.shared.token
     let userId = Session.shared.userId
