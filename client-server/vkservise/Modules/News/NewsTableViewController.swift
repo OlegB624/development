@@ -9,9 +9,34 @@ import UIKit
 
 class NewsTableViewController: UITableViewController {
 
-    var myNews = [comements: 10, likes: 5]
+    private var new: New?
+        private var myNews: [New] = []
+
+        private var newsApi = NewsApi()
+        private var newsfeeds: [NewsFeed] = []
+
+        private var vkItemsArray: [NItem] = []
+        private var vkProfilesArray: [NProfile] = []
+        private var vkGroupsArray: [NGroup] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+        let new2 = myNews(date: 280222, text: "", comments: 20, likes: 22, reposts: 23, photo: "fox", author: "FOX", shared: 14)
+        
+        myNews.append(new2)
+        
+        newsApi.getNews { [weak self] feed in
+                    guard let self = self else { return }
+
+        //            self.newsfeeds = feed
+                    guard let itemsArray = (feed?.response.items) else { return }
+                    self.vkItemsArray = itemsArray
+                    guard let profilesArray = (feed?.response.profiles) else { return }
+                    self.vkProfilesArray = profilesArray
+                    guard let groupsArray = (feed?.response.groups)  else { return }
+                    self.vkGroupsArray = groupsArray
+
+                }
+            }
     }
 
     // MARK: - Table view data source
