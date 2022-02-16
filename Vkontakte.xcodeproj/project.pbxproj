@@ -23,6 +23,13 @@
 		1F89DC6C27A98F6E00CF8020 /* LikedNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F89DC6B27A98F6E00CF8020 /* LikedNewsTableViewCell.swift */; };
 		1F89DC6E27B957CA00CF8020 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F89DC6D27B957CA00CF8020 /* NewsFeed.swift */; };
 		1F89DC7027B958D000CF8020 /* NewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F89DC6F27B958D000CF8020 /* NewsAPI.swift */; };
+		1F89DC7327B95F8800CF8020 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1F89DC7227B95F8800CF8020 /* PromiseKit */; };
+		1F89DC7527BD621300CF8020 /* FriendsPromiseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F89DC7427BD621300CF8020 /* FriendsPromiseRequest.swift */; };
+		1F89DC7727BD644D00CF8020 /* FriendsJsonDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F89DC7627BD644D00CF8020 /* FriendsJsonDecode.swift */; };
+		1F89DC7927BD64C200CF8020 /* FriendsReloadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F89DC7827BD64C200CF8020 /* FriendsReloadData.swift */; };
+		1F89DC7B27BD64F400CF8020 /* FriendsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F89DC7A27BD64F400CF8020 /* FriendsRequest.swift */; };
+		1F89DC7D27BD661700CF8020 /* friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F89DC7C27BD661700CF8020 /* friend.swift */; };
+		1F89DC7F27BD680100CF8020 /* PhotoSevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F89DC7E27BD680100CF8020 /* PhotoSevice.swift */; };
 		1F8B25E72731512100CFA122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B25E62731512100CFA122 /* AppDelegate.swift */; };
 		1F8B25E92731512100CFA122 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B25E82731512100CFA122 /* SceneDelegate.swift */; };
 		1F8B25EE2731512100CFA122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8B25EC2731512100CFA122 /* Main.storyboard */; };
@@ -90,6 +97,12 @@
 		1F89DC6B27A98F6E00CF8020 /* LikedNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedNewsTableViewCell.swift; sourceTree = "<group>"; };
 		1F89DC6D27B957CA00CF8020 /* NewsFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
 		1F89DC6F27B958D000CF8020 /* NewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPI.swift; sourceTree = "<group>"; };
+		1F89DC7427BD621300CF8020 /* FriendsPromiseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPromiseRequest.swift; sourceTree = "<group>"; };
+		1F89DC7627BD644D00CF8020 /* FriendsJsonDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsJsonDecode.swift; sourceTree = "<group>"; };
+		1F89DC7827BD64C200CF8020 /* FriendsReloadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsReloadData.swift; sourceTree = "<group>"; };
+		1F89DC7A27BD64F400CF8020 /* FriendsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsRequest.swift; sourceTree = "<group>"; };
+		1F89DC7C27BD661700CF8020 /* friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = friend.swift; sourceTree = "<group>"; };
+		1F89DC7E27BD680100CF8020 /* PhotoSevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSevice.swift; sourceTree = "<group>"; };
 		1F8B25E32731512100CFA122 /* Vkontakte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vkontakte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8B25E62731512100CFA122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F8B25E82731512100CFA122 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F89DC7327B95F8800CF8020 /* PromiseKit in Frameworks */,
 				1F9654F8279477960047E3D4 /* RealmSwift in Frameworks */,
 				1F9654D5278E13980047E3D4 /* SwiftyJSON in Frameworks */,
 				1F9654D2278E10E70047E3D4 /* SDWebImage in Frameworks */,
@@ -249,8 +263,12 @@
 		1F9654DB2792B7EA0047E3D4 /* Friends */ = {
 			isa = PBXGroup;
 			children = (
-				1F9654DE2792C0210047E3D4 /* Models */,
+				1F89DC7827BD64C200CF8020 /* FriendsReloadData.swift */,
 				1F37CB88278E03240026FC63 /* FriendsViewController.swift */,
+				1F9654DE2792C0210047E3D4 /* Models */,
+				1F89DC7427BD621300CF8020 /* FriendsPromiseRequest.swift */,
+				1F89DC7627BD644D00CF8020 /* FriendsJsonDecode.swift */,
+				1F89DC7A27BD64F400CF8020 /* FriendsRequest.swift */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -259,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				1F920C73276BB2E600FAE9AA /* FriendsModel.swift */,
+				1F89DC7C27BD661700CF8020 /* friend.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -305,6 +324,7 @@
 				1F9654F027940AF90047E3D4 /* PhotoAPI.swift */,
 				1F89DC6D27B957CA00CF8020 /* NewsFeed.swift */,
 				1F89DC6F27B958D000CF8020 /* NewsAPI.swift */,
+				1F89DC7E27BD680100CF8020 /* PhotoSevice.swift */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -378,6 +398,7 @@
 				1F9654D1278E10E70047E3D4 /* SDWebImage */,
 				1F9654D4278E13980047E3D4 /* SwiftyJSON */,
 				1F9654F7279477960047E3D4 /* RealmSwift */,
+				1F89DC7227B95F8800CF8020 /* PromiseKit */,
 			);
 			productName = Vkontakte;
 			productReference = 1F8B25E32731512100CFA122 /* Vkontakte.app */;
@@ -456,6 +477,7 @@
 				1F9654D0278E10E70047E3D4 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				1F9654D3278E13980047E3D4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				1F9654F6279477960047E3D4 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				1F89DC7127B95F8700CF8020 /* XCRemoteSwiftPackageReference "PromiseKit" */,
 			);
 			productRefGroup = 1F8B25E42731512100CFA122 /* Products */;
 			projectDirPath = "";
@@ -511,6 +533,7 @@
 				1FC5EB05273834CE0067F713 /* Friends.swift in Sources */,
 				1FA9CC3E274659C000910F43 /* CustomHeaderFriends.swift in Sources */,
 				1F1F8A7D2743811500707CE3 /* MyProfilePhotoCell.swift in Sources */,
+				1F89DC7927BD64C200CF8020 /* FriendsReloadData.swift in Sources */,
 				1FE5F06727679B6E0083169F /* account.swift in Sources */,
 				1F9654EF27940AE90047E3D4 /* GroupesAPI.swift in Sources */,
 				1F9654E62793FFC90047E3D4 /* PhotoModel.swift in Sources */,
@@ -527,15 +550,20 @@
 				1F8B2619273152D000CFA122 /* LoginFormController.swift in Sources */,
 				1F89DC6427A98CE200CF8020 /* PhotoNewsTableViewCell.swift in Sources */,
 				1F89DC6E27B957CA00CF8020 /* NewsFeed.swift in Sources */,
+				1F89DC7D27BD661700CF8020 /* friend.swift in Sources */,
 				1F9654F127940AF90047E3D4 /* PhotoAPI.swift in Sources */,
+				1F89DC7727BD644D00CF8020 /* FriendsJsonDecode.swift in Sources */,
 				1F9654E22792C1CE0047E3D4 /* GroupeModelDAO.swift in Sources */,
 				1F8B25E72731512100CFA122 /* AppDelegate.swift in Sources */,
 				1FAF614C2739963E00385844 /* GroupeCell.swift in Sources */,
 				1F920C74276BB2E600FAE9AA /* FriendsModel.swift in Sources */,
 				1F1F8A77274380BD00707CE3 /* MyProfileController.swift in Sources */,
+				1F89DC7B27BD64F400CF8020 /* FriendsRequest.swift in Sources */,
 				1F8B25E92731512100CFA122 /* SceneDelegate.swift in Sources */,
+				1F89DC7527BD621300CF8020 /* FriendsPromiseRequest.swift in Sources */,
 				1F89DC5C27A85A7900CF8020 /* NewsTableViewController.swift in Sources */,
 				1F9654D82792B5510047E3D4 /* Data+PrettyJSON.swift in Sources */,
+				1F89DC7F27BD680100CF8020 /* PhotoSevice.swift in Sources */,
 				1F37CB89278E03240026FC63 /* FriendsViewController.swift in Sources */,
 				1FAF615227399A5600385844 /* GroupSearchCell.swift in Sources */,
 				1F1F8A7B274380FD00707CE3 /* MyProfilePhotoController.swift in Sources */,
@@ -896,6 +924,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1F89DC7127B95F8700CF8020 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.16.3;
+			};
+		};
 		1F9654CD278E10880047E3D4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -931,6 +967,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1F89DC7227B95F8800CF8020 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F89DC7127B95F8700CF8020 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
 		1F9654CE278E10880047E3D4 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1F9654CD278E10880047E3D4 /* XCRemoteSwiftPackageReference "Alamofire" */;

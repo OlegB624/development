@@ -8,6 +8,10 @@
     import UIKit
     import SDWebImage
 
+
+    let session = Session.shared
+    let promiseFriends = FriendsPromiseRequest()
+
     final class FriendsViewController: UITableViewController {
         private var friendAPI = friendsAPI()
         private var friends: [FriendsModelDAO] = []
@@ -21,6 +25,7 @@
                 self.tableView.reloadData()
             }
         }
+        
         override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return friends.count
         }
